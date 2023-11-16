@@ -1,0 +1,21 @@
+cabal-version: >=1.8
+
+name: socket-vsock
+version: 1.0.0
+build-type: Simple
+license: MIT
+license-file: LICENSE
+author: Rickard Nilsson <rickard@nixbuild.net>
+maintainer: Rickard Nilsson <rickard@nixbuild.net>
+homepage: https://github.com/nixbuild/haskell-socket-vsock
+bug-reports: https://github.com/nixbuild/haskell-socket-vsock/issues
+
+library
+  ghc-options: -Wall -Werror -O
+  hs-source-dirs: .
+  exposed-modules:
+    System.Socket.Family.VSock
+  other-modules:
+  build-depends:
+    base,
+    socket
